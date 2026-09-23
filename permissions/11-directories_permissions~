@@ -1,3 +1,2 @@
 #!/bin/bash
-groups
- 
+chmod a+x */
