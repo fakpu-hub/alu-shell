@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "obase=8;ibase=5;$(echo "$WATER" | tr water 01234)+ibase=4;$(echo "$STIR" | tr stir 0123)" | bc | tr 01234567 bestchol
+printf 'obase=8\n%s\n' "$(( $(printf 'ibase=5\n%s\n' "$(echo "$WATER" | tr water 01234)" | bc) + $(printf 'ibase=4\n%s\n' "$(echo "$STIR" | tr stir 0123)" | bc) ))" | bc | tr 01234567 bestchol
