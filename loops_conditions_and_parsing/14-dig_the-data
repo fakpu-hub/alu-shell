@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 #comment
-#awk '{print $1, $8}' apache-access.log | sort | uniq -c | sort -rn
-awk '{match($0, /"[A-Z]+ [^"]*" [0-9][0-9][0-9]/); print $1, substr($0, RSTART+RLENGTH-3, 3)}' apache-access.log
+awk '{print $1, $8}' apache-access.log | sort | uniq -c | sort -rn
