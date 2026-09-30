@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bashcase 
 #comment
 while IFS=: read -r username password uid gid info home shell
 do
