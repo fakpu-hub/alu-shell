@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#camm
+pkill -f 7-highlander
